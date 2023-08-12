@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+     <main class="container-input">
+        <h3 id='titulo'> Password Generator </h3><hr/>
+        <span> Size <span id="valor"></span></span>
+        <input min="5" max="30" id="slider" class="slider" type="range">
+
+        <button id="button" class="button-cta" onclick="geradorSenha()" >Generate Password</button>
+     </main>
+
+      <div id="container-password" onclick="copiarSenha()" class="container-password hide">  <!--hide é pra deixar a div oculta(só aparece quando clica em gera senha)-->
+        <span class="tittle">You password are::</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Copy the Password.</span>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/gerador.js"></script>
+</body>
+</html>
